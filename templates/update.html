@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+    Update-Page
+{% endblock title %}
+{% block body %}
+
+<body style="background: rgb(169, 224, 224);">
+  <div>
+      <a class="active" href="/">Home</a>
+      <a href="/get_data">Back</a>
+    </div>
+
+    <div style="padding: 10px;">
+      <h1 style="background: darkcyan; font-weight: bolder; text-align: center;">microsoft</h1>
+    </br>
+   </div>
+   <form method="POST">
+    <div id="container">
+      <h2 style="font-weight: bold;">Please fill for Update the details</h2>
+    </br></br>
+    <label for="emp_name"><b>Name</b></label>
+      <input class="input_box" id="emp_name" type="text" placeholder="Please enter employee Name" name="emp_name" required>
+    </br></br>
+    <label for="emp_age "><b>Age</b></label>
+      <input class="input_box" id="emp_age" type="number" placeholder="Please enter Age" name="emp_age" required>
+    </br></br>
+    <label for="emp_email"><b>Email address</b></label>
+      <input class="input_box" id="emp_email" type="email" placeholder="Please enter email address" name="emp_email" required>
+    </br></br></br>
+      <button id="myButton" type="submit" class="btn"><b>Submit</b></button>
+
+    </div>
+  </form>
+  </body>
+  {% endblock body %}
